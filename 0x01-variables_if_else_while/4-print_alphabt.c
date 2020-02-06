@@ -10,17 +10,16 @@ int main(void)
 {
 	int a;
 
-	for (a = 97; a < 101; a++)
+	for (a = 97; a < 123; a++)
 	{
-		putchar(a);
+	if (a == 101 || a == 113)
+	{
+		a = a;
 	}
-	for (a = 102; a < 113; a++)
+	else
 	{
-		putchar(a);
+		putchar (a);
 	}
-	for (a = 114; a < 123; a++)
-	{
-		putchar(a);
 	}
 		putchar('\n');
 	return (0);
