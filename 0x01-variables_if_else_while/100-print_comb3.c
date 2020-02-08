@@ -1,4 +1,5 @@
 
+
 #include <time.h>
 #include <stdio.h>
 /**
@@ -8,7 +9,7 @@
 */
 int main(void)
 {
-	int c = 49, a , b;
+	int c = 49, a, b;
 
 	for (a = 48; a < 58; a++)
 	{
@@ -29,3 +30,4 @@ int main(void)
 	}
 	return (0);
 }
+
