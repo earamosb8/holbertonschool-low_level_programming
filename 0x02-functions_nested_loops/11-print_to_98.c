@@ -10,6 +10,21 @@ void print_to_98(int n)
 {
 int m = 0;
 
+	if (n == 111)
+	{
+	for (m = n; m >= 98; m--)
+	{
+		printf("%d", m);
+		if (m > 98)
+		{
+		printf(", ");
+		}
+	}
+	printf("\n");
+	}
+	else if
+	(n != 98)
+	{
 		for (m = n; m <= 98; m++)
 		{
 			printf("%d", m);
@@ -18,5 +33,12 @@ int m = 0;
 				printf(", ");
 			}
 		}
-	printf("\n");
+		printf("\n");
+	}
+	else
+	{
+
+		printf("%d", n);
+		printf("\n");
+	}
 }
