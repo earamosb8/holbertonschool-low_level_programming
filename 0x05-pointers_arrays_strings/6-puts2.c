@@ -19,12 +19,12 @@ int b = strlen(str);
 	c = a % 2;
 	if (c == 0)
 	{
-		printf("%c", str[a]);
+		_putchar(str[a]);
 	}
 
 		a++;
 	}
 
-		printf("\n");
+		_putchar('\n');
 
 }
