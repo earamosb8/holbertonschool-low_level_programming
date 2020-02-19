@@ -1,4 +1,3 @@
-#include <string.h>
 #include "holberton.h"
 /**
  * puts2 - writes the character c to stdout
@@ -11,8 +10,12 @@ void puts2(char *str)
 {
 
 int a = 0, c;
-int b = strlen(str);
+int b = 0;
 
+	while (str[b] != '\0')
+	{
+	b++;
+	}
 	while (a <= b)
 	{
 	c = a % 2;
@@ -27,3 +30,4 @@ int b = strlen(str);
 		_putchar('\n');
 
 }
+
