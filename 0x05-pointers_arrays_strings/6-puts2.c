@@ -9,13 +9,13 @@
 void puts2(char *str)
 {
 
-int a = 0, c;
-int b = 0;
+int a = 0, b = 0, c = 0;
 
 	while (str[b] != '\0')
 	{
 	b++;
 	}
+b--;
 	while (a <= b)
 	{
 	c = a % 2;
