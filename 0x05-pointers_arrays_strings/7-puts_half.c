@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "holberton.h"
 /**
  * puts_half - writes the character c to stdout
@@ -17,12 +16,14 @@ void puts_half(char *str)
 		a++;
 
 	}
+
 	c = a % 2;
+
 	if (c == 0)
 	{
 		n = a / 2;
-
-		while (str[n] != '\0')
+	a--;
+		while (n <= a)
 		{
 			_putchar(str[n]);
 			n++;
@@ -33,13 +34,13 @@ void puts_half(char *str)
 	(c != 0)
 	{
 		n = (a - 1) / 2;
-
-		while (str[n] != '\0')
+		a--;
+		while (n <= a)
 		{
-		n++;
-		_putchar(str[n]);
-
+			_putchar(str[n]);
+			n++;
 		}
-	_putchar('\n');
-}
+
+	}
+_putchar('\n');
 }
