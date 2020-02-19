@@ -1,6 +1,4 @@
 #include "holberton.h"
-#include <stdio.h>
-#include <string.h>
 /**
  * puts2 - writes the character c to stdout
  * @str:---------------
