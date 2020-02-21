@@ -13,6 +13,10 @@ char *cap_string(char *c)
 
 	while (c[a] !=  '\0')
 	{
+		if (a == 0 && c[a] >= 'a' && c[a] <= 'z')
+		{
+			c[0] -= 32;
+		}
 		for (x = 0; x <= 12; x++)
 		{
 			if (c[a] == b[x])
