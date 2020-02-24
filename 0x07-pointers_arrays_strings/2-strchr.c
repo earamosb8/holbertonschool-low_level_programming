@@ -18,9 +18,5 @@ char *_strchr(char *s, char c)
 		}
 		a++;
 	}
-if (s[a] == '\n' || s[a] != c)
-{
-	return (NULL);
-}
 return (NULL);
 }
