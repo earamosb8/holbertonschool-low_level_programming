@@ -1,27 +1,26 @@
-#include <stdio.h>
+#include "holberton.h"
 /**
  * _strchr - writes the character c to stdout
  * @s: The character to print
- * @c:asddadasdasdas
+ * @c: dfsdfsds
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
 char *_strchr(char *s, char c)
 {
-	int i = 0;
+	int a = 0;
 
-	while (s[i] != '\0')
+	while (s[a] != '\0')
 	{
-		if (s[i] == c)
+		if (s[a] == c)
 		{
-			return (s + i);
+			return (s + a);
 		}
-
-		i++;
+		a++;
 	}
-if (s[i] == '\0'|| s[i] != c)
+if (s[a] == '\n' || s[a] != c)
 {
-return (NULL);
+	return (NULL);
 }
 return (NULL);
 }
