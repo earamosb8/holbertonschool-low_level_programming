@@ -1,3 +1,4 @@
+#include <stdio.h>
 /**
  * _strchr - writes the character c to stdout
  * @s: The character to print
@@ -7,4 +8,12 @@
  */
 char *_strchr(char *s, char c)
 {
+	int i = 0;
+
+	while (s[i] != c)
+	{
+		i++;
+	}
+return (s + i);
+}
 
