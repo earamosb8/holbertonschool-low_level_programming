@@ -5,28 +5,20 @@
  * Return: Always 0.
  */
 unsigned int _strspn(char *s, char *accept)
-{
-	int a = 0, b = 0,d = 0, c = 0;
-	unsigned int qw = 0;
+{	unsigned int qw = 0;
+	int a = 0, b = 0, x = 0;
 
-	while (accept[a] != '\0')
+	while (accept[x] != '\0')
 	{
-		a++;
+		x++;
 	}
-	while(s[b] != '\0')
+	for (a = 0; a <= x; a++)
 	{
-		for(c = 0; c <= a; c++)
-		{
-			if(accept[c] == s[d])
-			{
-				qw = qw + 1;
-				b++;
-				d = 0;
-			}
-
-
-		}
+	while (accept[a] != s[b])
+	{
+		b++;
 	}
-
-return (qw);
+	qw = qw + 1;
+	}
+	return (qw);
 }
