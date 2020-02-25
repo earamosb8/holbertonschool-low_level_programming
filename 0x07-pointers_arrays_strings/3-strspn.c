@@ -13,11 +13,11 @@ unsigned int _strspn(char *s, char *accept)
 		x++;
 	}
 
-	while(s[a] > 96 && s[a] < 123)
+	while (s[a] > 96 && s[a] < 123)
 	{
 		for (b = 0; b <= x; b++)
 		{
-			if(s[a] == accept[b])
+			if (s[a] == accept[b])
 			{
 				qw = qw + 1;
 
