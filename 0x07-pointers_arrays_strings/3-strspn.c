@@ -13,7 +13,7 @@ unsigned int _strspn(char *s, char *accept)
 		x++;
 	}
 
-	while (s[a] != ' ' && s[a] != ',')
+	while (a <= x)
 	{
 		for (b = 0; b <= x; b++)
 		{
