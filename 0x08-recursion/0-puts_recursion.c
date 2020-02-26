@@ -4,14 +4,16 @@
  * @s: char
  * Return: Always 0.
  */
-	void _puts_recursion(char *s)
-	{
-	int a = 0;
+void _puts_recursion(char *s)
+{
 
-	while (s[a] != '\0')
+	if (*s != '\0')
 	{
-		_putchar(s[a]);
-		a++;
+	_putchar(*s);
+	_puts_recursion(s + 1);
 	}
+	else
+	{
 	_putchar('\n');
 	}
+}
