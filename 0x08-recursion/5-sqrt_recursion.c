@@ -12,7 +12,7 @@ int _sqrt_recursion(int n)
 {
 	int a = 1;
 
-	return (gogo(n, a));
+	return (increment(n, a));
 
 }
 /**
