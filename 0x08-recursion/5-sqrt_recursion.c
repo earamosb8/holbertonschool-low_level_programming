@@ -1,32 +1,43 @@
 #include "holberton.h"
+#include <stdio.h>
 /**
- * _putchar - writes the character c to stdout
- * @c: The character to print
- *
+ * _sqrt_recursion -  returns the natural square root of a number. .
+ * * @n: int
+ * @a: int
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
-	int gogo(int n , int a);
-	int _sqrt_recursion(int n)
-	{
+int increment(int n, int a);
+int _sqrt_recursion(int n)
+{
 	int a = 1;
-	if(n >0)
-	{
-		gogo(n,a);
-	}
-		return(0);
-	}
 
-	int gogo (int n, int a)
+	return (gogo(n, a));
+
+}
+/**
+ * increment - this is the function increment
+ * @n: int
+ * @a: int
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+
+	int increment(int n, int a)
 	{
 		if (a * a == n)
 		{
-		return (a);
+			return (a);
+		}
+		else if (a * a > n)
+		{
+			return (-1);
 		}
 		else
 		{
 			a++;
-			gogo(n,a);
+			return (increment(n, a));
 		}
-return (a);
-}
+	}
+
+
