@@ -1,6 +1,7 @@
 #include<ctype.h>
 #include<stdio.h>
 #include<stdlib.h>
+int revisar(char *s);
 /**
  * main - arcg, *argv print the name of program
  * @argc: count parameters
@@ -15,8 +16,10 @@ int main(int argc, char *argv[])
 
 	for (a = 1; a < argc; a++)
 	{
-		if (isdigit(*argv[a]))
+		if (revisar(argv[a]))
 		{
+
+
 			num = atoi(argv[a]);
 			suma = suma + num;
 		}
@@ -35,4 +38,18 @@ int main(int argc, char *argv[])
 	return (0);
 
 }
+
+	int revisar(char *s)
+	{
+		int b = 0;
+
+		for (b = 0; s[b] != '\0'; b++)
+		{
+			if (!isdigit(n[b]))
+			{
+				return (0);
+			}
+		}
+		return (1);
+	}
 

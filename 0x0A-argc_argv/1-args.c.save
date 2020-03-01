@@ -1,0 +1,16 @@
+#include<stdio.h>
+/**
+ * main - arcg, *argv print the name of program
+ * @argc: count parameters
+ * @argv: array parameters
+ * Return: return
+ *
+ */
+in
+t main(int argc, char *argv[])
+{
+for(a = 0; a <= argc; a++)
+{
+	printf("%d\n", argc[a]);
+	return (0);
+}
