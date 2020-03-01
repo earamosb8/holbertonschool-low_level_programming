@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <stdio.h>
 /**
  * *_strpbrk - seachs string
  * @s: array in

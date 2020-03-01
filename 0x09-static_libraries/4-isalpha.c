@@ -1,5 +1,4 @@
 #include "holberton.h"
-
 /**
  * _isalpha - checks for letters.
  * @c: number to return one for letters and zero for others
@@ -13,3 +12,4 @@ int _isalpha(int c)
 		c = 0;
 	return (c);
 }
+

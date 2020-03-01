@@ -1,5 +1,4 @@
 #include "holberton.h"
-
 /**
  * _islower - checks for lowercase character.
  * @c: number to return one for lowercase and zero for  others
@@ -13,3 +12,4 @@ int _islower(int c)
 		c = 0;
 	return (c);
 }
+

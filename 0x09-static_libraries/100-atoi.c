@@ -1,6 +1,4 @@
-
 #include "holberton.h"
-#include <stdio.h>
 /**
  * _atoi - reverses a string
  * @s: array in
@@ -24,3 +22,4 @@ unsigned int num = 0;
 
 	return (num * signo);
 }
+

@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "holberton.h"
 /**
  * _strcat - writes the character c to stdout
@@ -24,3 +23,4 @@ char *_strcat(char *dest, char *src)
 	dest[a] = '\0';
 	return (dest);
 }
+
