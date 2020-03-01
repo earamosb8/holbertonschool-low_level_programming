@@ -39,13 +39,18 @@ int main(int argc, char *argv[])
 
 }
 
+/**
+ * revisar - revisa si  a char es un digit.
+ * @s: char
+ * Return: return 1 y 0
+ */
 	int revisar(char *s)
 	{
 		int b = 0;
 
 		for (b = 0; s[b] != '\0'; b++)
 		{
-			if (!isdigit(n[b]))
+			if (!isdigit(s[b]))
 			{
 				return (0);
 			}
