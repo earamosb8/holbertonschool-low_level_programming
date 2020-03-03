@@ -14,7 +14,7 @@ char *_strdup(char *str)
 	{
 		a++;
 	}
-
+	a++;
 	if (a == 0)
 	{
 		return (NULL);
@@ -29,7 +29,7 @@ char *_strdup(char *str)
 	{
 		nstring[b] = str[b];
 	}
-	nstring[b] = '\0';
+
 	return (nstring);
 }
 
