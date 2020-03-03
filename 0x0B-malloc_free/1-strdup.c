@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 /**
  * _strdup---create a array
  * @str: "holberton"
@@ -12,7 +11,10 @@ char *_strdup(char *str)
 	int a = 0, b;
 	char *nstring;
 
-	a = strlen(str);
+	while(str[a] != '\0')
+	{
+		a++;
+	}
 	a++;
 	if (a == 0)
 	{
