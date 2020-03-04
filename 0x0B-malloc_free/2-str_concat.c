@@ -27,8 +27,6 @@ char *str_concat(char *s1, char *s2)
 		s2 = malloc(1);
 		*s2 = '\0';
 	}
-	else
-	{
 	while(s1[size1] != '\0')
 		size1++;
 	while (s2[size2] != '\0')
@@ -51,7 +49,6 @@ char *str_concat(char *s1, char *s2)
 			b++;
 			contador++;
 		}
-	}
 	}
 	return (newstring);
 }
