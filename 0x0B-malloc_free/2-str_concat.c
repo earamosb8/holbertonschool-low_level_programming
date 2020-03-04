@@ -32,7 +32,7 @@ char *str_concat(char *s1, char *s2)
 	while (s2[size2] != '\0')
 		size2++;
 	totalsize = size1 + size2;
-	newstring = malloc(sizeof(char) * totalsize);
+	newstring = malloc(sizeof(char) * totalsize + 1);
 	if (newstring == NULL)
 		return (NULL);
 	while (contador <= totalsize)
