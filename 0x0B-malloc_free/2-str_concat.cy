@@ -38,11 +38,9 @@ char *str_concat(char *s1, char *s2)
 			a++;
 		}
 		if (a == size1)
-		{
 			newstring[contador] = s2[b];
 			contador++;
 			b++;
-		}
 	}
 
 	return (newstring);
