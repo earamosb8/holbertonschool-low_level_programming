@@ -10,6 +10,13 @@ char *str_concat(char *s1, char *s2)
 	int size1 = 0, size2 = 0, totalsize, contador = 0, a = 0, b = 0;
 	char *newstring;
 
+	if (s1 == NULL && s2 == NULL)
+	{
+		s1 = malloc(1);
+		s2 = malloc(1);
+		*s1 = '\0';
+		*s2 = '\0';
+	}
 	if (s1 == NULL)
 	{
 		s1 = malloc(1);
@@ -19,13 +26,6 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = malloc(1);
 		*s2 = '\0';
-	}
-	if (s1 == NULL && s2 == NULL)
-	{
-		s1 = malloc(1);
-		s2 = malloc(1);
-		*s2 = '\0';
-		*s1 = '\0';
 	}
 	while(s1[size1] != '\0')
 		size1++;
