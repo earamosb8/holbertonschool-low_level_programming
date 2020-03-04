@@ -17,16 +17,18 @@ char *str_concat(char *s1, char *s2)
 		*s1 = '\0';
 		*s2 = '\0';
 	}
-	if (s1 == NULL && s2 != NULL)
+	else if (s1 == NULL && s2 != NULL)
 	{
 		s1 = malloc(1);
 		*s1 = '\0';
 	}
-	if (s2 == NULL && s1 != NULL)
+	else if (s2 == NULL && s1 != NULL)
 	{
 		s2 = malloc(1);
 		*s2 = '\0';
 	}
+	else
+	{
 	while(s1[size1] != '\0')
 		size1++;
 	while (s2[size2] != '\0')
@@ -49,6 +51,7 @@ char *str_concat(char *s1, char *s2)
 			b++;
 			contador++;
 		}
+	}
 	}
 	return (newstring);
 }
