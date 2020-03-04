@@ -5,14 +5,19 @@
  * @s2: string 2
  * Return: string
  */
+char *asignar(int a);
 char *str_concat(char *s1, char *s2)
 {
 	int size1 = 0, size2 = 0, totalsize, contador = 0, a = 0, b = 0;
 	char *newstring;
 
-	if (s1 == NULL || s2 == NULL)
+	if (s1 == NULL)
 	{
-		return (NULL);
+		s1[0] = ' ';
+	}
+	if (s2 == NULL)
+	{
+		s2[0] = ' ';
 	}
 	while (s1[size1] != '\0')
 	{
@@ -23,7 +28,7 @@ char *str_concat(char *s1, char *s2)
 		size2++;
 	}
 	totalsize = size1 + size2;
-	newstring = malloc(sizeof(char) * totalsize + 1);
+	newstring = asignar(totalsize);
 	if (newstring == NULL)
 	{
 		return (NULL);
@@ -46,4 +51,11 @@ char *str_concat(char *s1, char *s2)
 	}
 
 	return (newstring);
+}
+
+
+char *asignar(int a)
+{ char*newstring;
+	newstring = malloc(sizeof(char) * a + 1);
+	return(newstring);
 }
