@@ -57,6 +57,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			d++;
 		}
 	}
+if(p == NULL)
+{
+return (NULL);
+}
 	p[b] = '\0';
 	return(p);
 }
