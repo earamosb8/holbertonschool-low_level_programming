@@ -69,7 +69,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	_strcpy(name2, name);
 	_strcpy(owner2, owner);
 
-	miperro = malloc(sizeof(dog_t));
+	miperro = malloc(sizeof(struct dog));
 	if (miperro == NULL)
 	{
 		free(name2);
