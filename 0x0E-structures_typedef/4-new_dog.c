@@ -55,27 +55,26 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	lename = _strlen(name);
 	lenowner = _strlen(owner);
-	name2 = malloc(lename + 1);
-	if (name2 == NULL)
+	miperro = malloc(sizeof(dog_t));
+	if (miperro == NULL)
 	{
 		return (NULL);
 	}
+	name2 = malloc(lename + 1);
+	if (name2 == NULL)
+	{
+		free(miperro);
+		return (NULL);
+	}
 	owner2 = malloc(lenowner + 1);
-	if (owner2 == NULL)
+	if (miperro == NULL)
 	{
 		free(name2);
+		free(miperro);
 		return (NULL);
 	}
 	_strcpy(name2, name);
 	_strcpy(owner2, owner);
-
-	miperro = malloc(sizeof(struct dog));
-	if (miperro == NULL)
-	{
-		free(name2);
-		free(owner2);
-		return (NULL);
-	}
 	miperro->name = name2;
 	miperro->age = age;
 	miperro->owner = owner2;
