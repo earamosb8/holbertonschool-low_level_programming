@@ -38,6 +38,14 @@ int a;
 	}
 	return (a);
 }
+/**
+ * dog_t *new_dog ---new_dog
+ * @name: name to copy
+ * @age: age of dog
+ * @owner: th owner
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	int lename, lenowner;
@@ -70,7 +78,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	}
 	miperro->name = name2;
 	miperro->age = age;
-	miperro->owner = owner;
+	miperro->owner = owner2;
 	return (miperro);
 
 }
