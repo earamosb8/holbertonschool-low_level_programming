@@ -1,0 +1,13 @@
+/**
+ * dog - Initialize a variable of type struct dog
+ * @d: The name of the variable
+ * @name: The name of the dog
+ * @age: The age of the dog
+ * @owner: The name of the dog's owner
+ */
+struct eldog {
+
+char * name;
+float * age;
+char * owner;
+}
