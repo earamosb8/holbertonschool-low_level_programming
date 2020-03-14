@@ -11,7 +11,8 @@ void print_all(const char * const format, ...)
 	char elchar;
 	va_list num_args;
 	char *sep = "";
-char *michar;
+	char *michar;
+
 	va_start(num_args, format);
 		while (format[b] != '\0')
 		{
@@ -39,9 +40,9 @@ char *michar;
 				continue;
 			}
 		sep = ", ";
-
 		b++;
 		}
+		va_end(num_args);
 		printf("\n");
 
 
