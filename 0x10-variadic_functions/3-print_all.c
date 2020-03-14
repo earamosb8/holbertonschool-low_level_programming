@@ -22,33 +22,28 @@ void print_all(const char * const format, ...)
 			switch (elchar)
 			{
 				case 'c':
-				printf("%s%c", sep, va_arg(num_args, int));
-				break;
+					printf("%s%c", sep, va_arg(num_args, int));
+					break;
 				case 'i':
-				printf("%s%d", sep, va_arg(num_args, int));
-				break;
+					printf("%s%d", sep, va_arg(num_args, int));
+					break;
 				case 'f':
-				printf("%s%f", sep, va_arg(num_args, double));
-				break;
+					printf("%s%f", sep, va_arg(num_args, double));
+					break;
 				case 's':
-				michar = va_arg(num_args, char *);
-				if (michar == NULL)
-					michar = "(nil)";
-				printf("%s%s", sep, michar);
-				break;
+					michar = va_arg(num_args, char *);
+					if (michar == NULL)
+						michar = "(nil)";
+					printf("%s%s", sep, michar);
+					break;
 				default:
-				b++;
-				continue;
+					b++;
+					continue;
 			}
-		sep = ", ";
-		b++;
+		sep = ", ", b++;
 		}
-
 		va_end(num_args);
 		break;
 	}
 		printf("\n");
-
-
-
 }
