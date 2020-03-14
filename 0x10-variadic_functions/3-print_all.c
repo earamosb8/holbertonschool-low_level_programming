@@ -13,11 +13,12 @@ void print_all(const char * const format, ...)
 	char *sep = "";
 	char *michar;
 
-	va_start(num_args, format);
+	while (format)
+	{
+		va_start(num_args, format);
 		while (format[b] != '\0')
 		{
 			elchar = format[b];
-
 			switch (elchar)
 			{
 				case 'c':
@@ -42,7 +43,10 @@ void print_all(const char * const format, ...)
 		sep = ", ";
 		b++;
 		}
+
 		va_end(num_args);
+		break;
+	}
 		printf("\n");
 
 
