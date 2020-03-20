@@ -1,8 +1,8 @@
 #include <stdlib.h>
 #include "lists.h"
-/*
+/**
  * free_list - free the memory.
- * @head: head of list
+ * @head: list
  */
 void free_list(list_t *head)
 {
