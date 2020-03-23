@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include "lists.h"
+/**
+ * print_list - Print all the elements of a list_t list
+ * @h: The list
+ *
+ * Return: The number of nodes
+ */
+list_t *add_node(list_t **head, const char *str)
+{
+	if (head == NULL)
+	{
+		return (0);
+	}
+
+		if (head == NULL)
+		{
+			return (0);
+		}
+		while (head != NULL)
+		{
+			head = head->next;
+		}
+	head.next = *str;
+return(*head);
+}
+
