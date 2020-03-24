@@ -1,4 +1,4 @@
-#include <stdlib.h>
+[B#include <stdlib.h>
 #include "lists.h"
 /**
  * free_listint2 - free the memory.
@@ -15,9 +15,9 @@ void free_listint2(listint_t **head)
 	}
 	while (temp != NULL)
 	{
-		buff = temp->next;
+		temp = *head;
+		*head = (*head)->next;
 		free(temp);
-		temp = buff;
 	}
 	*head = NULL;
 }
