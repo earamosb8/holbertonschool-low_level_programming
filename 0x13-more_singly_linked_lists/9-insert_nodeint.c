@@ -42,7 +42,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		nuevo->next = *head;
 		*head = nuevo;
 	}
-	else if (tmp != NULL)
+	else if (tmp)
 	{
 		nuevo->next = tmp->next;
 		nuevo->n = n;
