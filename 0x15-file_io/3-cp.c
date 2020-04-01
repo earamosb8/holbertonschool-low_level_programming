@@ -2,29 +2,29 @@
 /**
  * main - copies a file
  *
- * @argc: argument cont
- * @argv: arguments
+ * @arc: argument cont
+ * @arv: arguments
  * Return: Returns 97 for syntax error, 98 for read error, 99 write, 100 close
  */
-int main(int argc, char *argv[])
+int main(int arc, char *arv[])
 {
 	int opf = 0;
 	int opc = 0;
 	int rd = MAX_SIZE, wr, c1, c2;
 	char temp[MAX_SIZE];
 
-	if (argc != 3)
+	if (arc != 3)
 	{
-		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n"), exit(97);
+		dprintf(STDERR_FILENO, "Usage:cp file_from file_to\n"), exit(97);
 	}
-	opf = open(argv[1], O_RDONLY);
+	opf = open(arv[1], O_RDONLY);
 	if (opf == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]), exit(98);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", arv[1]), exit(98);
 	}
-	opc = open(argv[2], O_WRONLY | O_TRUNC | O_CREAT, 0664);
+	opc = open(arv[2], O_WRONLY | O_TRUNC | O_CREAT, 0664);
 	if (opc == -1)
-		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", arv[2]), exit(99);
 
 	while (rd == MAX_SIZE)
 	{
@@ -38,9 +38,9 @@ int main(int argc, char *argv[])
 	if (c2 == -1)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", opc), exit(100);
 	if (rd == -1)
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]), exit(98);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", arv[1]), exit(98);
 	if (wr <= -1)
-		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", arv[2]), exit(99);
 
 	return (0);
 }
