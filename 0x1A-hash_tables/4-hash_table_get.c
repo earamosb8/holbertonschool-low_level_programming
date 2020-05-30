@@ -7,7 +7,7 @@
  */
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
-	unsigned long int x;
+	unsigned long int x = 0;
 
 	if (ht == NULL || key == NULL || *key == 0)
 	{
