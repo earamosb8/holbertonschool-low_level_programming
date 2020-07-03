@@ -1,0 +1,5 @@
+# this is a make file to compiler holberton.c using variables CC and SRC
+CC = gcc
+SRC = main.c holberton.c
+all: main.o holberton.o
+	$(CC) $(SRC) -o holberton
