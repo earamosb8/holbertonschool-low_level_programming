@@ -1,0 +1,4 @@
+# this is a make file to compiler holberton.c
+all: main.o holberton.o
+	gcc main.c holberton.c -o holberton
+
