@@ -6,7 +6,7 @@
 def island_perimeter(grid):
     """ returns the perimeter of the island """
     sum = 0
-    for i in range(len(grid) - 1):
+    for i in range(len(grid)):
         for j in range(0, len(grid[i])):
             if i == 0:
                 if grid[i][j] == 1 and j == 0:
@@ -40,4 +40,4 @@ def island_perimeter(grid):
                                 sum = 4
                             else:
                                 sum = sum + 2
-    return(sum)
+        print(sum)
