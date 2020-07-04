@@ -40,4 +40,4 @@ def island_perimeter(grid):
                                 sum = 4
                             else:
                                 sum = sum + 2
-        print(sum)
+    return(sum)
