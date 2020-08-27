@@ -61,7 +61,7 @@ void print_array(int *array, size_t start, size_t end)
 			}
 			else
 			{
-				printf("%d,", array[i]);
+				printf("%d, ", array[i]);
 			}
 		}
 		printf("\n");
